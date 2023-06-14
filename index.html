@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+    <title>NASA FORM</title>
+</head>
+<body>
+    <header>
+        <img src="images/NASA.png">
+    </header>
+    <main>
+        <form>
+            
+<!-- 
+Challenge:
+1. Add a submit button to the form. 
+2. Make all of the inputs compulsory.
+-->
+            <label for="astronautName">Astronaut Name 👩‍🚀</label>
+            <input 
+                type="text" 
+                id="astronautName" 
+                name="astronautName"
+                placeholder="Neil Armstrong"
+                required
+                >
+            <label for="astronautEmail">Astronaut Email</label>
+            <input 
+                type="email" 
+                id="astronautEmail" 
+                name="astronautEmail"
+                placeholder="n.armstrong@nasa.com"
+                required
+                >
+            <label for="astronautPassword">Password</label>
+            <input 
+                type="password" 
+                id="astronautPassword" 
+                name="astronautPassword"
+                placeholder="******"
+                required
+                >
+                <button type="submit">Submit</button>
+        </form>    
+        <div id="guest"></div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
